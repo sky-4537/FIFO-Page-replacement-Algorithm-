@@ -20,7 +20,7 @@
             <input type="text" name="element"id="text" class="form-control">
             <div class="buttons">
                 <button type="button" class="btn btn-success" id="add" onclick="pageFaults()">ADD</button>
-            </div>    
+            </div>
         <div id="fifo">Memory pages in the memory slot
             <ul id="list"></ul><br>
         </div>
@@ -30,35 +30,47 @@
         <div id="page_hits">Total Page Hits are:
             <h3 id="hits">0</h3>
         </div>
+        <div id="page_hits">The hit rate is:
+            <h3 id="hit-rate">0</h3>
         </div>
+        <div id="page_hits">The miss rate is:
+            <h3 id="miss-rate">0</h3>
+        </div><br>
+
+
+        <div class="optimal-heading">Optimal Page Replacement
+            <div ><br>
+                <div id="optimal">Memory pages in the memory slot
+                    <br>
+                    <br>
+                    <input type="number" id="cap1" min="0"><br><br>
+                    <label for="text">Enter The page string </label>
+                    <div>
+                        <br>
+                    <input type="text" name="elements" id="text1" class="form-control">
+                    <div class="buttons">
+                        <button type="button" class="btn btn-success" id="add1" onclick="optimalPage()">ADD</button>
+                    </div>
+                <div class="fault-optimal">
+                    Total page faults are:
+                    <h3 id="faults2">0</h3>
+                </div>
+                <div class="hits-optimal" id="hits-optimal">
+                    Total page hits are:
+                    <h3 id="hits2">0</h3>
+                </div>
+            </div>
+        </div>
+        </div>
+
     </div>
 
     <br>
-    <script src="script.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src='script2.js'></script>
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-            crossorigin="anonymous"></script>
             <script type="module">
-                // Import the functions you need from the SDKs you need
-                import { initializeApp } from "https://www.gstatic.com/firebasejs/9.10.0/firebase-app.js";
-                // TODO: Add SDKs for Firebase products that you want to use
-                // https://firebase.google.com/docs/web/setup#available-libraries
-              
-                // Your web app's Firebase configuration
-                const firebaseConfig = {
-                  apiKey: "AIzaSyAJikofKBdUYzFeT_XgdZLTPilrp8xVF8M",
-                  authDomain: "page-replacement.firebaseapp.com",
-                  projectId: "page-replacement",
-                  storageBucket: "page-replacement.appspot.com",
-                  messagingSenderId: "494095229485",
-                  appId: "1:494095229485:web:cf8f7d75444924b65c8ea4"
-                };
-              
-                // Initialize Firebase
-                const app = initializeApp(firebaseConfig);
-              </script>
-</body>
-</html>
+
+

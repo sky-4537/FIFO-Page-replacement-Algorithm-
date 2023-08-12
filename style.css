@@ -31,7 +31,7 @@ ul li {
 	border-radius: 25%;
 	font-size: large;
 	font-weight: bolder;
-	
+
 }
 li:nth-child(1) {
 	background-color: #f9ed69;
@@ -140,6 +140,27 @@ h1 {
 	font-weight: bold;
 	font-family: 'Concert One', cursive;
 }
+.optimal{
+	font-size: xx-large;
+	font-weight: bold;
+	font-family: 'Concert One', cursive;
+}
+#optimal{
+	font-size: xx-large;
+	font-weight: bold;
+	font-family: 'Concert One', cursive;
+}
+.optimal-heading{
+	font-size: xx-large;
+	font-weight: bold;
+	font-family: 'Concert One', cursive;
+}
+.hits-optimal,.fault-optimal{
+	font-size: xx-large;
+	font-weight: bold;
+	font-family: 'Concert One', cursive;
+}
+
 #page_faults,#page_hits{
 	font-size: xx-large;
 	font-weight: bold;
@@ -164,7 +185,25 @@ label {
 }
 #add:hover {
 	background: rgb(5, 245, 5);
-	width: 11%;
+	width: 11%;cursor: pointer;
+}
+#add1{
+	font-weight: 900;
+	font-size: medium;
+	letter-spacing: 2px;
+	padding: 4px;
+	transition: 0.8s;
+	position: relative;
+	width: 10%;
+	overflow: hidden;
+
+}
+#add1 {
+	margin-right: 3.5%;
+}
+#add1:hover {
+	background: rgb(5, 245, 5);
+	width: 11%;cursor: pointer;
 }
 @media screen and (min-width: 480px) {
 	h2 {
